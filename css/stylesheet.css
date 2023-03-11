@@ -1,0 +1,101 @@
+
+/* 
+Por el momento estoy estilando, pensando en que el usuario final no utiliza el modo oscuro del navegador
+#######################################################################################################################
+25/02/2023 la paleta de colores elegida por el momemto no es la definitiva, queria trabajar en un gradiente de grises y color petroleo, pero resulta que es algo muy comun. 
+la familia de fuentes 
+#######################################################################################################################
+*/
+
+/*############# imports ###############*/
+/*@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');*/
+
+@font-face {
+    font-family: "Walkway";
+    src: url(../assets/fonts/Walkway\ Black.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Walkway', sans-serif;  /*esta familia es la mas parecida que encontre en google, pero la mia va a ser walkway, no llegue a practicar como usar fuentes propias*/
+}
+
+.body{
+    
+    margin: 0;
+    padding: 0;
+        
+}
+
+/*################## inicio Estilado Header ################## */
+.colorFondoHeaderFooter{
+    background-color: #084d6e;
+}
+.sticky{
+    position: sticky;
+    top: 0px;
+}
+.divLogoHeader .Logo{
+    border: solid 1px black;
+    width: 60px;
+    }
+
+.ulNav{
+    list-style: none;
+}
+
+.liNav{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    display: inline-block;
+	width: 15%;
+	position: relative;
+	font-size: 1.5rem;
+    float: none;
+}
+
+.bordeBajo{
+    border-bottom:solid 2px #084d9f;
+}
+/*################## Fin Estilado Header ################## */
+
+/*################## Inicio Estilado Main ################## */
+.IndexMain {
+   
+    height: 75vh;
+    
+}
+
+.imagenFondoMainIndex{
+    background-image: url(../assets/img/fondo_Portada.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fondoTextoIndex{
+
+    width: 75%;
+    align-items:center;
+    
+    background-color: #606364a8;
+
+}
+/*################## Propiedades de texto libres ################## */
+
+.textoCentrado{
+    text-align: center;
+}
+.textoIzuierda{
+    text-align: right;
+}
+.textoIquierda{
+    text-align: left;
+}
+
+.negrita{
+    font-weight: bold;
+}

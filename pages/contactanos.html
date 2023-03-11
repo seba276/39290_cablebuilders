@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contactanos</title>
+        <!-- el favicon esta pensado para un usuario que usa el navegador en modo tradicional,  con el modo oscuro el favicon no se va a ver-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../assets/img/favicon_cablebuilders.ico" type="image/x-icon">
+         <!--Bootstrap-->
+       <link rel="stylesheet" href="./css/bootstrap.min.css">
+       <link rel="stylesheet" href="../css/stylesheet.css">
+    </head>
+    <body>
+        <header class="colorFondoHeaderFooter sticky">
+            
+            <div class="divLogoHeader">
+                 <img class="Logo" src="../assets/img/icono cable builders.png"  alt="Logo Institucional de CableBuilders">
+            </div>
+            <nav>
+                <ul class="ulNav">
+                    <li><a class="liNav" href="../index.html">Inicio</a></li>
+                    <li><a class="liNav" href="productos.html">Productos</a></li>
+                    <li><a class="liNav" href="conocenos.html">Conocenos</a></li>
+                    <li><a class="liNav" href="nuestros_clientes.html">Nuestros Clientes</a></li>
+                    <li><a class="liNav" href="#">Contactanos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                    
+                <!-- Formulario de contacto 
+                Quiero que el cliente pueda dejar sus datos y elegir por que medio prefiere que lo contactemos, por lo que le voya  pedir nombre apellido, mail y telefono. y luego que seleccione en un checbox cual de los medios prefiere-->
+                <h2>Dejanos tus datos y te contactamos</h2>
+                <form action="">
+                    <div>
+                        <label for="Nombre">Nombre:</label>
+                        <input type="text" placeholder="Aca pone tu Nombre" id="Nombre" name="Nombre" required>
+                    </div>
+                    <div>  
+                        <label for="Apellido">Apellido:</label>
+                        <input type="text" placeholder="Aca pone tu Apellido" id="Apellido" name="Apellido" required>
+                    </div>
+                    <div>                    
+                        <label for="Mail">Mail</label>
+                        <input type="email" placeholder="ejemplo@mail.com" id="Mail" name="Mail" required>
+                    </div>
+                    <div>
+                        <label for="Numero">Numero de Telefono:</label>
+                        <input type="tel" placeholder="5491111111111"id="Telefono" name="Telefono" required>                          
+                    </div>
+                    <div>
+                    <label for="list">¿Como preferis que te contactemos?</label>
+                    <input list="contacto" required>
+                        <datalist id="contacto">
+                            <option value="Whatsapp"></option>
+                            <option value="Telefono"></option>
+                            <option value="Mail"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <textarea name="Contanos" id="" cols="20" rows="10" placeholder="lo que quieras decirnos"></textarea>
+                    </div>
+                    <div>
+                        <input type="reset" value="Limpiar Formulario">         
+                        <input type="submit" value="Enviar Formulario">         
+                    </div>                   
+                </form>    
+            </section>
+
+            <nav>
+            <h2>Donde Estamos</h2>
+            <!-- Donde estamos -->
+                <h3>Fabrica</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5225.202931642133!2d-58.9736686380155!3d-34.40969200265484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb7d359f7ff7d7%3A0xd23701709eac5a18!2sParque%20Industrial%20Pilar!5e0!3m2!1ses!2sar!4v1676676352888!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3>Oficinas</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.17500753663026!2d-58.42917449931782!3d-34.590549182729674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58807a93a05%3A0xbece261debf55c28!2sArmenia%201525%2C%20C1414%20CABA!5e0!3m2!1ses!2sar!4v1676676701389!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </nav>
+
+        <footer class="colorFondoHeaderFooter textoCentrado">                                 
+            <div>
+                    <!-- Link a facebook-->
+                    <a href="https://es-la.facebook.com/" target="_blank"> <img src="../assets/img/facebook.png" width="40px" alt="Logo y link a Facebook"></a>
+                    <!-- Link a twitter-->
+                    <a href="https://www.twitter.com" target="_blank"> <img src="../assets/img/twitter_icol.png" width="40px" alt="Logo y link a twitter"></a>
+                    <!-- Link a instagram-->
+                    <a href="https://www.instagram.com/cablebuilders.ar/" target="_blank"> <img src="../assets/img/instagram_ico.png" width="40px" alt="Logo y link a instagram"></a>
+            </div>
+                        
+            <h6> CableBuilders 2023 - Todos los derechos reservados </h6>
+
+        </footer>
+         
+    </body>
+</html>
