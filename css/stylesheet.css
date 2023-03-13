@@ -12,7 +12,7 @@ la familia de fuentes
 
 @font-face {
     font-family: "Walkway";
-    src: url(../assets/fonts/Walkway\ Black.ttf);
+    src: url(../assets/fonts/Walkway_Black.ttf)
 }
 
 
@@ -39,24 +39,31 @@ la familia de fuentes
     top: 0px;
 }
 .divLogoHeader .Logo{
-    border: solid 1px black;
+    /*border: solid 1px black;*/
     width: 60px;
+    position: inherit;
     }
 
 .ulNav{
     list-style: none;
+    text-align: right;
+    padding: 0;
+    margin: auto;
+    
 }
 
-.liNav{
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
+.linkNav{
     display: inline-block;
-	width: 15%;
-	position: relative;
-	font-size: 1.5rem;
-    float: none;
+    margin-left: 15x;
+    margin-right: 15px;
 }
+
+.linkNav a{
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black
+}    
 
 .bordeBajo{
     border-bottom:solid 2px #084d9f;
@@ -66,22 +73,19 @@ la familia de fuentes
 /*################## Inicio Estilado Main ################## */
 .IndexMain {
    
-    height: 75vh;
+    height: 100vh;
     
 }
 
 .imagenFondoMainIndex{
     background-image: url(../assets/img/fondo_Portada.jpeg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
 }
 .fondoTextoIndex{
 
-    width: 75%;
     align-items:center;
-    
     background-color: #606364a8;
+    margin-top: 20px;
 
 }
 /*################## Propiedades de texto libres ################## */
