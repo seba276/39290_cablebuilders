@@ -33,8 +33,6 @@ la familia de fuentes
 /*################## inicio Estilado Header ################## */
 .colorFondoHeaderFooter{
     background-color: #13709b;
-    margin: 0;
-    padding: 0;
 }
 
 .sticky{
@@ -44,10 +42,6 @@ la familia de fuentes
 
 .fuenteLogo{
     font-family: "Walkway";
-}
-.divLogoHeader .Logo{
-    width: 60px;
-    border: solid 1px black;
 }
 
 .fuenteMenu{
@@ -59,16 +53,16 @@ la familia de fuentes
 
 /*################## Inicio Estilado Main ################## */
 
-.imagenFondoMainIndex{
-    background-image: url(../assets/img/fondo_Portada.jpeg) ;
+.imagenFondoBody{
+    background:linear-gradient(to right,rgba(136, 136, 136, 0.642),rgba(0, 0, 0, 0.642)), url("../assets/img/fondo_Index_Resized.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
     background-position: center;
-    height: 100vh;
-       
+    background-repeat: no-repeat;
+      
 }
 .fondoTextoIndex{
-    
-    width: 1000px;
-    background-color: #606364a8;
+    width: 75%;
     margin: auto;
     padding-top: 25px;
 }
@@ -80,7 +74,10 @@ la familia de fuentes
     color: black;
     font-size: 2rem;
 }
-
+.stickyBottom{
+    position: sticky;
+    bottom: 0px;
+}
 
 /*################## Fin Estilado Footer ################## */
 /*################## Propiedades de texto libres ################## */
