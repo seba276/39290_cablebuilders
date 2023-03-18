@@ -6,30 +6,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Productos</title>
         <!-- el favicon esta pensado para un usuario que usa el navegador en modo tradicional,  con el modo oscuro el favicon no se va a ver-->
-        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../assets/img/favicon_cablebuilders.ico" type="image/x-icon">
+        <!--Agrego FontAwesome-->
+        <script src="https://kit.fontawesome.com/604b776d4d.js" crossorigin="anonymous"></script>
         <!--Bootstrap-->
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/stylesheet.css">
+       <link rel="stylesheet" href="../css/bootstrap.min.css">
+       <link rel="stylesheet" href="../css/stylesheet.css">
     </head>
     <body>
-        <header class="colorFondoHeaderFooter sticky">
+        <div class="sticky">
+            <header>    
+                <div class="row colorFondoHeaderFooter">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid justify-content-end">
+                            <div>
+                                <a class="navbar-brand" href="#">
+                                    <img src="../assets/img/icono cable builders.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                Cablebuilders
+                                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <!--##### aca combine mis anlcas con las clases de las anclas de bootstrap y le cambie la fuente-->      
+                            <ul class="navbar-nav justify-content-end w-100">
+                                    <li><a class="nav-link fuenteMenu" href="../index.html">Inicio</a></li>
+                                    <li><a class="nav-link active fuenteMenu" href="#">Productos</a></li>
+                                    <li><a class="nav-link fuenteMenu" href="conocenos.html">Conocenos</a></li>
+                                    <li><a class="nav-link fuenteMenu" href="nuestros_clientes.html">Clientes</a></li>
+                                    <li><a class="nav-link fuenteMenu" href="contactanos.html">Contactanos</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
             
-            <div class="divLogoHeader">
-                 <img class="Logo" src="../assets/img/icono cable builders.png"  alt="Logo Institucional de CableBuilders">
-            </div>
-            <nav>
-                <ul class="ulNav">
-                    <li class="linkNav"><a href="../index.html">Inicio</a></li>
-                    <li class="linkNav"><a href="#">Productos</a></li>
-                    <li class="linkNav"><a href="conocenos.html">Conocenos</a></li>
-                    <li class="linkNav"><a href="nuestros_clientes.html">Nuestros Clientes</a></li>
-                    <li class="linkNav"><a href="contactanos.html">Contactanos</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        </header>
-        <main>s
+        </div> 
+        <main>
             <div><img src="../assets/img/Producto_1.jpg" alt="Producto_1"></div>
             <p>Descripcion de Producto 1</p>
             <div><img src="../assets/img/Producto_2.jpg" alt="Producto_2"></div>
@@ -43,19 +59,26 @@
             <div><img src="../assets/img/Producto_6.jpg" alt="Producto_6"></div>
             <p>Descripcion de Producto 6</p>
         </main>
-        <footer class="colorFondoHeaderFooter textoCentrado">                                 
-            <div>
+        <footer class="colorFondoHeaderFooter textoCentrado fuenteMenu">                                 
+            <div class="row">
+                <div class="col-4 textoCentrado">
                     <!-- Link a facebook-->
-                    <a href="https://es-la.facebook.com/" target="_blank"> <img src="../assets/img/facebook.png" width="40px" alt="Logo y link a Facebook"></a>
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-3x colorRrss"></i></a>
+                </div>    
+                <div class="col-4 textoCentrado">
                     <!-- Link a twitter-->
-                    <a href="https://www.twitter.com" target="_blank"> <img src="../assets/img/twitter_icol.png" width="40px" alt="Logo y link a twitter"></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter fa-3x colorRrss"></i></a>
+                </div>
+                <div class="col-4 textoCentrado">
                     <!-- Link a instagram-->
-                    <a href="https://www.instagram.com/cablebuilders.ar/" target="_blank"> <img src="../assets/img/instagram_ico.png" width="40px" alt="Logo y link a instagram"></a>
-            </div>
-                       
-            <h6> CableBuilders 2023 - Todos los derechos reservados </h6>
-
+                    <a href="https://www.instagram.com/cablebuilders.ar/" target="_blank"> <i class="fa-brands fa-instagram fa-3x colorRrss"></i></a>
+                </div>        
+             
+            </div> 
+            <div class="row fuenteMenu textoCentrado">        
+               <p> CableBuilders 2023 - Todos los derechos reservados</p>
+            </div>   
         </footer>
-     
+        <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

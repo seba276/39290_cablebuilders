@@ -5,28 +5,45 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nuestros Clientes</title>
-       <!-- el favicon esta pensado para un usuario que usa el navegador en modo tradicional,  con el modo oscuro el favicon no se va a ver-->
-       <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-       <!--Bootstrap-->
-       <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- el favicon esta pensado para un usuario que usa el navegador en modo tradicional,  con el modo oscuro el favicon no se va a ver-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../assets/img/favicon_cablebuilders.ico" type="image/x-icon">
+        <!--Agrego FontAwesome-->
+        <script src="https://kit.fontawesome.com/604b776d4d.js" crossorigin="anonymous"></script>
+        <!--Bootstrap-->
+       <link rel="stylesheet" href="../css/bootstrap.min.css">
        <link rel="stylesheet" href="../css/stylesheet.css">
     </head>
     <body>
-        <header class="colorFondoHeaderFooter sticky">
-            
-            <div class="divLogoHeader">
-                 <img class="Logo" src="../assets/img/icono cable builders.png"  alt="Logo Institucional de CableBuilders">
-            </div>
-            <nav>
-                <ul class="ulNav">
-                    <li class="linkNav"><a href="../index.html">Inicio</a></li>
-                    <li class="linkNav"><a href="productos.html">Productos</a></li>
-                    <li class="linkNav"><a href="conocenos.html">Conocenos</a></li>
-                    <li class="linkNav"><a href="#">Nuestros Clientes</a></li>
-                    <li class="linkNav"><a href="contactanos.html">Contactanos</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="sticky">
+            <header>    
+                <div class="row colorFondoHeaderFooter">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid justify-content-end">
+                            <div>
+                                <a class="navbar-brand" href="#">
+                                    <img src="../assets/img/icono cable builders.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                Cablebuilders
+                                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <!--##### aca combine mis anlcas con las clases de las anclas de bootstrap y le cambie la fuente-->      
+                            <ul class="navbar-nav justify-content-end w-100">
+                                    <li><a class="nav-link fuenteMenu" href="../index.html">Inicio</a></li>
+                                    <li><a class="nav-link fuenteMenu" href="productos.html">Productos</a></li>
+                                    <li><a class="nav-link fuenteMenu" href="conocenos.html">Conocenos</a></li>
+                                    <li><a class="nav-link active fuenteMenu" href="#">Clientes</a></li>
+                                    <li><a class="nav-link fuenteMenu" href="contactanos.html">Contactanos</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div> 
 
 
         <main>
@@ -44,7 +61,7 @@
             <br>
             <img src="../assets/img/Logo-Shell.png" width="145px" alt="Shell">
         </main>
-        <footer class="colorFondoHeaderFooter textoCentrado">                                 
+        <footer class="container-fluid">                                 
             <div>
                     <!-- Link a facebook-->
                     <a href="https://es-la.facebook.com/" target="_blank"> <img src="../assets/img/facebook.png" width="40px" alt="Logo y link a Facebook"></a>
@@ -53,12 +70,11 @@
                     <!-- Link a instagram-->
                     <a href="https://www.instagram.com/cablebuilders.ar/" target="_blank"> <img src="../assets/img/instagram_ico.png" width="40px" alt="Logo y link a instagram"></a>
             </div>
-                       
-            <h6> CableBuilders 2023 - Todos los derechos reservados </h6>
+            <div class="justify-content-end w-100">           
+                    <h6> CableBuilders 2023 - Todos los derechos reservados </h6>
+            </div>    
+        </footer>   
 
-        </footer>
-     
-
-
+        <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
