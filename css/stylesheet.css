@@ -9,10 +9,10 @@ la familia de fuentes
 
 /*############# imports ###############*/
 /*@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');*/
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap');
 @font-face {
     font-family: "Walkway";
-    src: url(../assets/fonts/Walkway_Black.ttf)
+    src: url(../assets/fonts/Walkway\ UltraExpand\ Bold.ttf)
 }
 
 
@@ -33,36 +33,41 @@ la familia de fuentes
 /*################## inicio Estilado Header ################## */
 .colorFondoHeaderFooter{
     background-color: #084d6e;
+    
 }
 .sticky{
     position: sticky;
     top: 0px;
 }
 .divLogoHeader .Logo{
-    /*border: solid 1px black;*/
+  
+    border: solid 1px black;
     width: 60px;
-    position: inherit;
-    }
+}
 
 .ulNav{
+   
     list-style: none;
     text-align: right;
+    background-color: green;
     padding: 0;
     margin: auto;
-    
 }
 
 .linkNav{
     display: inline-block;
     margin-left: 15x;
     margin-right: 15px;
+    
 }
 
 .linkNav a{
-    text-align: center;
+    text-align: right;
     font-size: 1.5rem;
     text-decoration: none;
-    color: black
+    font-family: 'Poppins', sans-serif;
+    color: antiquewhite;
+    color: black;
 }    
 
 .bordeBajo{
@@ -71,22 +76,19 @@ la familia de fuentes
 /*################## Fin Estilado Header ################## */
 
 /*################## Inicio Estilado Main ################## */
-.IndexMain {
-   
-    height: 100vh;
-    
-}
 
 .imagenFondoMainIndex{
     background-image: url(../assets/img/fondo_Portada.jpeg) ;
     background-position: center;
+    height: 100vh;
+       
 }
 .fondoTextoIndex{
-
-    align-items:center;
+    
+    width: 1000px;
     background-color: #606364a8;
-    margin-top: 20px;
-
+    margin: auto;
+    padding-top: 25px;
 }
 /*################## Propiedades de texto libres ################## */
 
