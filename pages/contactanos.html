@@ -15,13 +15,13 @@
        <link rel="stylesheet" href="../css/stylesheet.css">
     </head>
     <body>
-        <div class="sticky">
-            <header class="sticky ">    
+        <div>
+            <header class="sticky-top">    
                 <div class="row colorFondoHeaderFooter">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid justify-content-end">
                             <div>
-                                <a class="navbar-brand" href="#">
+                                <a class="navbar-brand sticky" href="#">
                                     <img src="../assets/img/icono cable builders.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
                                 Cablebuilders
                                 </a>
@@ -45,69 +45,100 @@
             </header>
         </div> 
         <main>
-            <section>
-                    
-                <!-- Formulario de contacto 
-                Quiero que el cliente pueda dejar sus datos y elegir por que medio prefiere que lo contactemos, por lo que le voya  pedir nombre apellido, mail y telefono. y luego que seleccione en un checbox cual de los medios prefiere-->
-                <h2>Dejanos tus datos y te contactamos</h2>
-                <form action="">
-                    <div>
-                        <label for="Nombre">Nombre:</label>
-                        <input type="text" placeholder="Aca pone tu Nombre" id="Nombre" name="Nombre" required>
+            <!-- armo un contenedor entero y adentro quiero poner tres divs para agrupar:
+                1 - redes sociales
+                2 - formulario de contacto
+                3 - Mapa 
+            -->
+            <div class="row contenedorContactanos bg-secondary fuenteMenu">
+                    <div class="col-sm-12 col-md-2 redes fuenteMenu">
+                        <h3 class="fuenteMenu fs-4 textoCentrado">Nuestras Redes</h3> 
+                        <div class="textoCentrado">
+                            <!-- Link a facebook-->
+                            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-5x colorRrss"></i></a>
+                        </div>    
+                        <div class="textoCentrado">
+                            <!-- Link a twitter-->
+                            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter fa-5x colorRrss"></i></a>
+                        </div>
+                        <div class="textoCentrado">
+                            <!-- Link a instagram-->
+                            <a href="https://www.instagram.com/cablebuilders.ar/" target="_blank"> <i class="fa-brands fa-instagram fa-5x colorRrss"></i></a>
+                        </div>        
                     </div>
-                    <div>  
-                        <label for="Apellido">Apellido:</label>
-                        <input type="text" placeholder="Aca pone tu Apellido" id="Apellido" name="Apellido" required>
-                    </div>
-                    <div>                    
-                        <label for="Mail">Mail</label>
-                        <input type="email" placeholder="ejemplo@mail.com" id="Mail" name="Mail" required>
-                    </div>
-                    <div>
-                        <label for="Numero">Numero de Telefono:</label>
-                        <input type="tel" placeholder="5491111111111"id="Telefono" name="Telefono" required>                          
-                    </div>
-                    <div>
-                    <label for="list">¿Como preferis que te contactemos?</label>
-                    <input list="contacto" required>
-                        <datalist id="contacto">
-                            <option value="Whatsapp"></option>
-                            <option value="Telefono"></option>
-                            <option value="Mail"></option>
-                        </datalist>
-                    </div>
-                    <div>
-                        <textarea name="Contanos" id="" cols="20" rows="10" placeholder="lo que quieras decirnos"></textarea>
-                    </div>
-                    <div>
-                        <input type="reset" value="Limpiar Formulario">         
-                        <input type="submit" value="Enviar Formulario">         
-                    </div>                   
-                </form>    
-            </section>
+                    <div class="col-sm-12 col-md-6 formulario fuenteMenu">
+                        <!-- Formulario de contacto 
+                        Quiero que el cliente pueda dejar sus datos y elegir por que medio prefiere que lo contactemos, por lo que le voya  pedir nombre apellido, mail y telefono. y luego que seleccione en un checbox cual de los medios prefiere-->
+                        <h3 class="fuenteMenu fs-4 textoCentrado">Dejanos tus datos y te contactamos</h3>
+                        <div class="row">
+                            <div class="col">
+                                <form class="row">
+                                    <div class="mb-3 col-12">
+                                      <label for="exampleInputEmail1" class="form-label text-white fuenteMenu">Email</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3 col-12">
+                                      <label for="exampleInputPassword1" class="form-label text-white fuenteMenu">Nombre</label>
+                                      <input type="text" class="form-control" id="exampleInputName1">
+                                    </div>
+                                    <div class="mb-3 col-12">
+                                        <label for="number" class="form-label text-white fuenteMenu">Telefono</label>
+                                        <input type="text" class="form-control" id="exampleInputName1">
+                                      </div>
+                                    <div class="mb-3 col-12">
+                                        <label for="exampleInputPassword1" class="form-label text-white fuenteMenu">Comentario</label>
+                                        <textarea name="" id="exampleInputComentario1" cols="30" rows="4" class="form-control"></textarea>                                      
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <button type="reset" class="btn colorBotonForm">Limpiar Formulario</button>
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <button type="submit" class="btn colorBotonForm">Enviar Formulario</button>
+                                    </div>
+                                </form>
+                            </div>
+                           
+                        </div>
 
-            <nav>
-            <h2>Donde Estamos</h2>
-            <!-- Donde estamos -->
-                <h3>Fabrica</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5225.202931642133!2d-58.9736686380155!3d-34.40969200265484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb7d359f7ff7d7%3A0xd23701709eac5a18!2sParque%20Industrial%20Pilar!5e0!3m2!1ses!2sar!4v1676676352888!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <h3>Oficinas</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.17500753663026!2d-58.42917449931782!3d-34.590549182729674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58807a93a05%3A0xbece261debf55c28!2sArmenia%201525%2C%20C1414%20CABA!5e0!3m2!1ses!2sar!4v1676676701389!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </nav>
 
-        <footer class="colorFondoHeaderFooter textoCentrado">                                 
-            <div>
-                    <!-- Link a facebook-->
-                    <a href="https://es-la.facebook.com/" target="_blank"> <img src="../assets/img/facebook.png" width="40px" alt="Logo y link a Facebook"></a>
-                    <!-- Link a twitter-->
-                    <a href="https://www.twitter.com" target="_blank"> <img src="../assets/img/twitter_icol.png" width="40px" alt="Logo y link a twitter"></a>
-                    <!-- Link a instagram-->
-                    <a href="https://www.instagram.com/cablebuilders.ar/" target="_blank"> <img src="../assets/img/instagram_ico.png" width="40px" alt="Logo y link a instagram"></a>
+
+                    </div>
+                    <div class="col-sm-12 col-md-4 mapas">
+                        <div class="row mapa">
+                            <h3 class="textoCentrado fuenteMenu"> Fabrica </h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5225.202931642133!2d-58.9736686380155!3d-34.40969200265484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb7d359f7ff7d7%3A0xd23701709eac5a18!2sParque%20Industrial%20Pilar!5e0!3m2!1ses!2sar!4v1676676352888!5m2!1ses!2sar" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
+
+                        </div>
+                        <div class="row mapa">
+                            <h3 class="textoCentrado fuenteMenu">Oficinas</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.17500753663026!2d-58.42917449931782!3d-34.590549182729674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58807a93a05%3A0xbece261debf55c28!2sArmenia%201525%2C%20C1414%20CABA!5e0!3m2!1ses!2sar!4v1676676701389!5m2!1ses!2sar" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
             </div>
-                        
-            <h6> CableBuilders 2023 - Todos los derechos reservados </h6>
+            
+            
 
-        </footer>
+            <footer class="fixed-bottom colorFondoHeaderFooter textoCentrado fuenteMenu">                                 
+                <div class="row">
+                    <div class="col-4 textoCentrado">
+                        <!-- Link a facebook-->
+                        <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-3x colorRrss"></i></a>
+                    </div>    
+                    <div class="col-4 textoCentrado">
+                        <!-- Link a twitter-->
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter fa-3x colorRrss"></i></a>
+                    </div>
+                    <div class="col-4 textoCentrado">
+                        <!-- Link a instagram-->
+                        <a href="https://www.instagram.com/cablebuilders.ar/" target="_blank"> <i class="fa-brands fa-instagram fa-3x colorRrss"></i></a>
+                    </div>        
+                 
+                </div> 
+                <div class="row fuenteMenu textoCentrado">        
+                   <p> CableBuilders 2023 - Todos los derechos reservados</p>
+                </div>   
+            </footer>
          <script src="./js/bootstrap.bundle.min.js"></script> 
     </body>
 </html>

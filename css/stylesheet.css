@@ -61,11 +61,20 @@ la familia de fuentes
     background-repeat: no-repeat;
       
 }
-.fondoTextoIndex{
-    width: 75%;
-    margin: auto;
-    padding-top: 25px;
+.propiedadesFelxbox{
+    height: 90vh;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items:center;
 }
+
+.contenedorTextoIndex{
+ text-align: center;
+}
+
+
 /*################## Fin Estilado Main ################## */
 
 /*################## Inicio Estilado Footer ################## */
@@ -80,6 +89,82 @@ la familia de fuentes
 }
 
 /*################## Fin Estilado Footer ################## */
+
+/*################## Estilado Main Contactanos ################## */
+
+.contenedorContactanos{
+    height: 90vh;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between    ;
+    align-content: center;
+
+}
+
+.redes{
+    /*aca trengo que trabajar mas porque quiero poner otros iconos diferentes*/
+    height: 70vh;
+    border: 3px solid white;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+}
+
+.formulario{
+    height: 70vh;
+    border: 3px solid white;
+
+}
+
+.mapas{
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 70vh;
+    border: 3px solid white;
+}
+
+.mapa{
+    
+    height: 50%;
+    flex-wrap: wrap;
+    border: 1px solid white
+}
+.colorBotonForm{
+    color: #fff;
+    background-color: #13709b;
+    border-color: #13709b;
+}
+
+
+
+
+/*################## Estilado Main Contactanos ################## */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*################## Propiedades de texto libres ################## */
 
 .textoCentrado{
