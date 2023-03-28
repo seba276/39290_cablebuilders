@@ -1,0 +1,146 @@
+/* 
+Por el momento estoy estilando, pensando en que el usuario final no utiliza el modo oscuro del navegador
+#######################################################################################################################
+25/02/2023 la paleta de colores elegida por el momemto no es la definitiva, queria trabajar en un gradiente de grises y color petroleo, pero resulta que es algo muy comun. 
+la familia de fuentes 
+#######################################################################################################################
+*/
+/*############# imports ###############*/
+/*@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap");
+@font-face {
+  font-family: "Walkway";
+  src: url(../assets/fonts/Walkway\ UltraExpand\ Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Walkway", sans-serif; /*esta familia es la mas parecida que encontre en google, pero la mia va a ser walkway, no llegue a practicar como usar fuentes propias*/
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+/*################## inicio Estilado Header ################## */
+.colorFondoHeaderFooter {
+  background-color: #13709b;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+}
+
+.fuenteLogo {
+  font-family: "Walkway";
+}
+
+.fuenteMenu {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+/*################## Fin Estilado Header ################## */
+/*################## Inicio Estilado Main ################## */
+.imagenFondoBody {
+  background: linear-gradient(to right, rgba(136, 136, 136, 0.642), rgba(0, 0, 0, 0.642)), url("../assets/img/fondo_Index_Resized.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.propiedadesFelxbox {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contenedorTextoIndex {
+  text-align: center;
+}
+
+/*################## Fin Estilado Main ################## */
+/*################## Inicio Estilado Footer ################## */
+.colorRrss {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+
+.stickyBottom {
+  position: sticky;
+  bottom: 0px;
+}
+
+/*################## Fin Estilado Footer ################## */
+/*################## Estilado Main Contactanos ################## */
+.contenedorContactanos {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.redes {
+  /*aca trengo que trabajar mas porque quiero poner otros iconos diferentes*/
+  height: 70vh;
+  border: 3px solid white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.formulario {
+  height: 70vh;
+  border: 3px solid white;
+}
+
+.mapas {
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 70vh;
+  border: 3px solid white;
+}
+
+.mapa {
+  height: 50%;
+  flex-wrap: wrap;
+  border: 1px solid white;
+}
+
+.colorBotonForm {
+  color: #fff;
+  background-color: #13709b;
+  border-color: #13709b;
+}
+
+/*################## Estilado Main Contactanos ################## */
+/*################## Propiedades de texto libres ################## */
+.textoCentrado {
+  text-align: center;
+}
+
+.textoDerecha {
+  text-align: right;
+}
+
+.textoIzquierda {
+  text-align: left;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=stylessheet.css.map */
