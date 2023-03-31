@@ -8,16 +8,17 @@ la familia de fuentes
 /*############# imports ###############*/
 /*@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap");
+@import "variables.scss";
+@import "reset.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "main.scss";
+
 @font-face {
   font-family: "Walkway";
   src: url(../assets/fonts/Walkway\ UltraExpand\ Bold.ttf);
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Walkway", sans-serif; /*esta familia es la mas parecida que encontre en google, pero la mia va a ser walkway, no llegue a practicar como usar fuentes propias*/
-}
+
 
 .body {
   margin: 0;
@@ -26,7 +27,7 @@ la familia de fuentes
 
 /*################## inicio Estilado Header ################## */
 .colorFondoHeaderFooter {
-  background-color: #13709b;
+  background-color: $color-petroleo;
 }
 
 .sticky {
@@ -126,13 +127,34 @@ la familia de fuentes
 }
 
 /*################## Estilado Main Contactanos ################## */
+
+
+
+/*################## Estilado Main Nuestros clientes ################## */
+
+.contenedorClientes{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  height: 70vh;
+  border: black solid 1px;
+}
+
+.box{
+  display: flex;
+  border:green solid 2px
+  margin 0 auto;
+  
+}
+
+
 /*################## Propiedades de texto libres ################## */
 .textoCentrado {
   text-align: center;
 }
 
 .textoDerecha {
-  text-align: right;
+  text-align: left;
 }
 
 .textoIzquierda {
