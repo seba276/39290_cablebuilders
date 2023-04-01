@@ -20,3 +20,20 @@ proximos pasos
 Debo mejorar el footer, quiero que quede mas fino, y el texto de derechos reservados al margen derecho, y ponerle animacion a las redes sociales.
 voy a cambiar el color de las fonst, por un gris que contrasta mejor. 
 
+
+#####################################
+##          PreEntrega3            ##
+#####################################
+Cuento todo lo que avance
+Trabaje sobre github, 
+aplique sass,
+particione en imports,
+agregue un carousel, me falta entender como hace rfuncionar la 4ta imagen del carousel)
+edite imagenes (falta mejorarlas)
+la grid de bootstrap me quedo bien como esperaba y responisive
+
+proximos pasos
+
+Debo mejorar el footer, quiero que quede mas fino, y el texto de derechos reservados al margen derecho, y ponerle animacion a las redes sociales.
+voy a cambiar el color de las fonst, por un gris que contrasta mejor. 
+
